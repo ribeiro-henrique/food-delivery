@@ -34,7 +34,7 @@
 
   #logo {
     height: 60px;
-    width: 60px;
+    width: 70px;
   }
 
   #nav a {
@@ -42,6 +42,7 @@
     text-decoration: none;
     margin: 12px;
     transition: 0.5s;
+    font-weight: 700;
   }
 
   #nav a:hover {

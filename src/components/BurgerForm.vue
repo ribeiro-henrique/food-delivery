@@ -6,6 +6,7 @@
         <label for="nome">Nome do cliente:</label>
         <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
       </div>
+
       <div class="input-container">
         <label for="pao">Escolha o pão:</label>
         <select name="pao" id="pao" v-model="pao">
@@ -13,6 +14,7 @@
           <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
         </select>
       </div>
+
       <div class="input-container">
         <label for="carne">Escolha a carne do seu Burger:</label>
         <select name="carne" id="carne" v-model="carne">
@@ -20,16 +22,19 @@
           <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
         </select>
       </div>
+
       <div id="opcionais-container" class="input-container">
         <label id="opcionais-title" for="opcionais">Selecione os opcionais:</label>
-        <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
+        <div class="checkbox-container" v-for="opcional in opcionaisData" :key="opcional.id">
           <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
           <span>{{ opcional.tipo }}</span>
         </div>
-      </div>
+      </div>  
+
       <div class="input-container">
         <input class="submit-btn" type="submit" value="Criar meu Burger!">
       </div>
+
     </form>
   </div>
 </template>
@@ -38,6 +43,32 @@
 <script>
   export default {
     name: "BurgerForm",
+    data() {
+      return {
+        paes: null,
+        carnes: null,
+        opcionaisData: null,
+        nome: null,
+        opcionais: [],
+        status: "Solicitado",
+        msg: null
+      }
+    },
+    methods: {
+      async getIngredients() {
+
+        const req = await fetch("http://localhost:3000/ingredientes");
+        const data = await req.json();
+
+        this.carnes = data.carnes;
+        this.paes = data.paes;
+        this.opcionaisData = data.opcionais;
+      }
+    },
+
+    mounted() {
+      this.getIngredients();
+    }
   }
 </script>
 

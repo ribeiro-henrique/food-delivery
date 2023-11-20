@@ -1,7 +1,7 @@
 <template>
   <Message :msg="msg" v-show="msg" />
   <div>
-    <form id="burger-form" method="POST" @submit="createBurger">
+    <form id="acai-form" method="POST" @submit="createPurple">
       <div class="input-container">
         <label for="nome">Nome do cliente:</label>
         <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
@@ -68,7 +68,7 @@
         this.opcionaisData = data.opcionais;
       },
 
-      async createBurger(event) {
+      async createPurple(event) {
 
         event.preventDefault();
 
@@ -116,7 +116,7 @@
 
 <style scoped>
 
-#burger-form {
+#acai-form {
     max-width: 400px;
     margin: 0 auto;
   }

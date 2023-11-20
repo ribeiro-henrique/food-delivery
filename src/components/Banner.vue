@@ -18,7 +18,7 @@
   background-image: url("/public/img/açaí.jpeg");
   background-position: 0 -250px;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

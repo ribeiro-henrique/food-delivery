@@ -82,7 +82,7 @@
 
         const dataJson = JSON.stringify(data);
 
-        const req = await fetch("https://food-delivey-api.vercel.app/roxinhos, {
+        const req = await fetch("https://food-delivey-api.vercel.app/roxinhos", {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: dataJson

@@ -60,7 +60,7 @@
     methods: {
       async getIngredients() {
 
-        const req = await fetch("http://localhost:3000/ingredientes");
+        const req = await fetch("https://food-delivey-api.vercel.app/ingredientes");
         const data = await req.json();
 
         this.tamanho = data.tamanho;
@@ -82,7 +82,7 @@
 
         const dataJson = JSON.stringify(data);
 
-        const req = await fetch("http://localhost:3000/roxinhos", {
+        const req = await fetch("https://food-delivey-api.vercel.app/roxinhos, {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: dataJson

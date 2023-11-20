@@ -1,20 +1,20 @@
 <template>
   <Banner />
   <div class="main-container">
-    <h1>Monte o seu Burguer:</h1>
-    <BurguerForm />
+    <h1>Monte seu Açaí:</h1>
+    <PurpleForm />
   </div>
 </template>
 
 <script>
 import Banner from '../components/Banner.vue';
-import BurguerForm from '../components/BurgerForm.vue';
+import PurpleForm from '../components/PurpleForm.vue';
 
 export default {
   name: "Homer",
   components: {
     Banner,
-    BurguerForm,
+    PurpleForm,
   }
 }
 

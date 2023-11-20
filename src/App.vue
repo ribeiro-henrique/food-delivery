@@ -16,8 +16,8 @@ export default {
   },
   data() {
     return {
-      logo_src: "/img/logo.png",
-      app_name: "Make your burger",
+      logo_src: "/img/roxinho.jpg",
+      app_name: "Roxinho Delivery",
     }
   }
 }
@@ -31,7 +31,7 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #111
+  color: #111;
 }
 
 .main-container {

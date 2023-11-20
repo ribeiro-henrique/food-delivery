@@ -1,6 +1,6 @@
 <template>
   <footer id="footer">
-    <p>Make your Burger &copy; 2023</p>
+    <p>Açaí Delivery &copy; 2023</p>
     <a href="https://github.com/ribeiro-henrique" target="_blank" rel="noopener noreferrer">Github</a> |
     <a href="https://www.linkedin.com/in/hesr/" target="_blank" rel="noopener noreferrer">Linkedin</a>
   </footer>
@@ -17,8 +17,8 @@
 
   #footer {
     height: 200px;
-    background-color: #222;
-    border-top: 4px solid #111;
+    background-color: #371B34;
+    border-top: 4px solid #fff;
     color: #fcba03;
     display: flex;
     align-items: center;
@@ -26,6 +26,10 @@
     bottom: 0;
     width: 100%;
     gap: 10px;
+  }
+
+  #footer p {
+    color: #fff;
   }
   
   #footer a {

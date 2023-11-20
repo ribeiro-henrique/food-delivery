@@ -19,7 +19,7 @@
 
 <style scoped>
   #nav {
-    background-color: #222;
+    background-color: #371B34;
     border-bottom: 4px solid #111;
     padding: 15px 50px;
     display: flex;
@@ -33,7 +33,7 @@
   }
 
   #logo {
-    height: 60px;
+    height: 70px;
     width: 70px;
   }
 

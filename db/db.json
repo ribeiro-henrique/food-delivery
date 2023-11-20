@@ -1,69 +1,85 @@
 {
   "ingredientes": {
-    "paes": [
+    "acai": [
       {
         "id": 1,
-        "tipo": "Italiano Branco"
+        "tipo": "Açaí Tradicional"
       },
       {
         "id": 2,
-        "tipo": "3 Queijos"
+        "tipo": "Açaí com Ninho"
       },
       {
         "id": 3,
-        "tipo": "Parmesão e Orégano"
-      },
-      {
-        "id": 4,
-        "tipo": "Integral"
-      },
-      {
-        "id": 5,
-        "tipo": "Pão de Mel"
+        "tipo": "Açaí com Menta"
       }
     ],
-    "carnes": [
+    "tamanho": [
       {
         "id": 1,
-        "tipo": "Maminha"
+        "tipo": "250ml"
       },
       {
         "id": 2,
-        "tipo": "Alcatra"
+        "tipo": "500ml"
       },
       {
         "id": 3,
-        "tipo": "Picanha"
+        "tipo": "750ml"
       },
       {
         "id": 4,
-        "tipo": "Veggie burger"
+        "tipo": "Barca 1,5L"
       }
     ],
     "opcionais": [
       {
         "id": 1,
-        "tipo": "Bacon"
+        "tipo": "Nutela"
       },
       {
         "id": 2,
-        "tipo": "Cheddar"
+        "tipo": "Bis"
       },
       {
         "id": 3,
-        "tipo": "Salame"
+        "tipo": "Leite Condensado"
       },
       {
         "id": 4,
-        "tipo": "Tomate"
+        "tipo": "Morango"
       },
       {
-        "id": 4,
-        "tipo": "Cebola roxa"
+        "id": 5,
+        "tipo": "Raspa de Chocolate"
       },
       {
-        "id": 4,
-        "tipo": "Pepino"
+        "id": 6,
+        "tipo": "Granulado"
+      },
+      {
+        "id": 7,
+        "tipo": "Granola"
+      },
+      {
+        "id": 8,
+        "tipo": "Banana"
+      },
+      {
+        "id": 9,
+        "tipo": "Mel"
+      },
+      {
+        "id": 10,
+        "tipo": "Cereja"
+      },
+      {
+        "id": 11,
+        "tipo": "Paçoca"
+      },
+      {
+        "id": 12,
+        "tipo": "Leite em pó"
       }
     ]
   },
@@ -81,5 +97,29 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "roxinhos": [
+    {
+      "nome": "Henrique Ribeiro",
+      "tamanho": "750ml",
+      "ac": "Açaí com Ninho",
+      "opcionais": [
+        "Nutela",
+        "Bis",
+        "Morango"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Thamires",
+      "tamanho": "500ml",
+      "ac": "Açaí Tradicional",
+      "opcionais": [
+        "Mel",
+        "Paçoca"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    }
+  ]
 }

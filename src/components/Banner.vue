@@ -1,6 +1,6 @@
 <template>
   <div id="main-banner">
-    <h1>Make Your Burger</h1>
+    <h1>Peça seu Roxinho!</h1>
   </div>
   
 </template>
@@ -15,7 +15,7 @@
 <style scoped>
 
 #main-banner {
-  background-image: url("/public/img/burger.jpg");
+  background-image: url("/public/img/açaí.jpeg");
   background-position: 0 -250px;
   background-size: cover;
   height: 500px;
@@ -25,10 +25,10 @@
 }
 
 #main-banner h1 {
-  color: #fff;
+  color: #fcba03;
   text-align: center;
   font-size: 60px;
-  background-color: #222;
+  background-color: #371B34;
   padding: 20px 40px;
 }
 

@@ -82,17 +82,19 @@
 
         const dataJson = JSON.stringify(data);
 
-        const req = await fetch("https://food-delivey-api.vercel.app/roxinhos", {
-          method: "POST",
-          headers: {"Content-Type": "application/json"},
-          body: dataJson
-        })
+        console.log(dataJson);
 
-        const res = await req.json();
+        // const req = await fetch("https://food-delivey-api.vercel.app/roxinhos", {
+        //   method: "POST",
+        //   headers: {"Content-Type": "application/json"},
+        //   body: dataJson
+        // })
 
-        this.msg = `Pedido Nº ${res.id} realizado com sucesso!`
+        // const res = await req.json();
 
-        setTimeout(() => this.msg = "", 3000);
+        this.msg = `Pedido realizado com sucesso!`
+
+        setTimeout(() => this.msg = "", 4500);
 
         this.nome = "",
         this.tam = "",
